@@ -1,5 +1,6 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   // Smooth scroll function
@@ -39,7 +40,8 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
             { icon: <FaGithub />, link: "https://github.com/saksham221201" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/saksham-joshi-a63388193" }
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/saksham-joshi-a63388193" },
+            { icon: <SiLeetcode />, link: "https://leetcode.com/sakshamjoshi22" }
             
           ].map((item, index) => (
             <a
