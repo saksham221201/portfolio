@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
@@ -41,7 +41,8 @@ const Footer = () => {
           {[
             { icon: <FaGithub />, link: "https://github.com/saksham221201" },
             { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/saksham-joshi-a63388193" },
-            { icon: <SiLeetcode />, link: "https://leetcode.com/sakshamjoshi22" }
+            { icon: <SiLeetcode />, link: "https://leetcode.com/sakshamjoshi22" },
+            { icon: <FaMedium />, link: "https://medium.com/@sakshamjoshi1975" }
             
           ].map((item, index) => (
             <a
