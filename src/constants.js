@@ -143,7 +143,7 @@ export const SkillsInfo = [
         "Project aimed at developing an in-app notification module using microservices architecture and Kafka-based asynchronous messaging. The system consisted of services to consume, validate, process, store, and forward messages across the platform. Kafka messages were validated and processed asynchronously, mapped and stored via a MongoDB-based CRUD service, and passed to another microservice responsible for sending silent push notifications via Firebase to end users. A reusable Kafka producer JAR was built to allow other services to publish messages efficiently. The application was containerized, deployed on Kubernetes with support for autoscaling, and managed using Azure DevOps pipelines.",
       image: inApp,
       tags: ["Java", "Spring Boot", "Kafka", "Redis", "Microservices", "SQL", "MongoDB"],
-      github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS"
+      github: "https://github.com/saksham221201?tab=repositories"
     },
     {
       id: 1,
@@ -152,7 +152,7 @@ export const SkillsInfo = [
         "Project involved working on an e-commerce application with functionalities such as product catalogue, cart service, Spring JWT for authentication, and many more.",
       image: ecommerceLogo,
       tags: ["Microservices", "Spring Boot", "HTML5", "CSS3", "JavaScript", "SQL", "Java", "ReactJS", "Redux"],
-      github: "https://github.com/codingmastr/CSPrep"
+      github: "https://github.com/saksham221201/ekart-ecommerce-application"
     },
     {
       id: 2,
@@ -161,6 +161,6 @@ export const SkillsInfo = [
         "Project involved creating a solution for banking application requirements using a Microservices architecture.",
       image: bankingLogo,
       tags: ["Microservices", "Spring Boot", "Java"],
-      github: "https://github.com/codingmastr/Movie-Recommendation-App"
+      github: "https://github.com/saksham221201?tab=repositories"
     }
   ];  
