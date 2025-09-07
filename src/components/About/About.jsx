@@ -27,6 +27,7 @@ const About = () => {
               text={[
                 'Backend Developer',
                 'Coder',
+                'GenAI Enthusiast',
               ]}
               speed={100}
               eraseSpeed={50}
@@ -80,3 +81,4 @@ const About = () => {
 };
 
 export default About;
+
