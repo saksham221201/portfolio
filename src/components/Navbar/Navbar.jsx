@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const Navbar = () => {
@@ -39,8 +39,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
-        }`}
+      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
+        isScrolled
+          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+          : "bg-transparent"
+      }`}
     >
       <div className="text-white py-5 flex justify-between items-center">
         {/* Logo */}
@@ -53,12 +56,13 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex space-x-8 text-gray-300 ml-5">
           {menuItems.map((item) => (
             <li
               key={item.id}
-              className={`cursor-pointer hover:text-[#8245ec] ${activeSection === item.id ? "text-[#8245ec]" : ""
-                }`}
+              className={`cursor-pointer hover:text-[#8245ec] ${
+                activeSection === item.id ? "text-[#8245ec]" : ""
+              }`}
             >
               <button onClick={() => handleMenuItemClick(item.id)}>
                 {item.label}
@@ -68,7 +72,7 @@ const Navbar = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-4 ml-8">
           <a
             href="https://github.com/saksham221201"
             target="_blank"
@@ -92,6 +96,14 @@ const Navbar = () => {
             className="text-gray-300 hover:text-[#8245ec]"
           >
             <SiLeetcode size={24} />
+          </a>
+          <a
+            href="https://medium.com/@sakshamjoshi1975"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <FaMedium size={24} />
           </a>
         </div>
 
@@ -118,8 +130,9 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <li
                 key={item.id}
-                className={`cursor-pointer hover:text-white ${activeSection === item.id ? "text-[#8245ec]" : ""
-                  }`}
+                className={`cursor-pointer hover:text-white ${
+                  activeSection === item.id ? "text-[#8245ec]" : ""
+                }`}
               >
                 <button onClick={() => handleMenuItemClick(item.id)}>
                   {item.label}
@@ -150,6 +163,14 @@ const Navbar = () => {
                 className="text-gray-300 hover:text-[#8245ec]"
               >
                 <SiLeetcode size={24} />
+              </a>
+              <a
+                href="https://medium.com/@sakshamjoshi1975"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-[#8245ec]"
+              >
+                <FaMedium size={24} />
               </a>
             </div>
           </ul>
