@@ -24,6 +24,9 @@ const ParticlesBackground = () => {
           value_area: 800,
         },
       },
+        color: {
+        value: "#00FFFF"
+      },
       links: {
         enable: true,
         distance: 100,

@@ -32,6 +32,7 @@ const Work = () => {
         {projects.map((project) => (
           <div
             key={project.id}
+            onClick={() => handleOpenModal(project)}
             className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
           >
             <div className="p-4">
@@ -62,6 +63,69 @@ const Work = () => {
           </div>
         ))}
       </div>
+
+      {/* Modal Container */}
+      {selectedProject && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4 overflow-y-auto">
+          <div className="bg-gray-900 rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative">
+            {/* Close Button */}
+            <div className="absolute top-4 right-4 z-10">
+              <button
+                onClick={handleCloseModal}
+                className="text-white text-3xl font-bold hover:text-purple-500"
+              >
+                &times;
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="flex flex-col">
+              {/* Project Image */}
+              <div className="w-full flex justify-center px-4 pt-6">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="w-full object-contain rounded-lg shadow-xl max-h-[40vh]"
+                />
+              </div>
+
+              {/* Text Content */}
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold text-white mb-3 text-center">
+                  {selectedProject.title}
+                </h3>
+
+                <p className="text-gray-400 mb-5 text-sm">
+                  {selectedProject.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {selectedProject.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="bg-[#251f38] text-xs font-medium text-purple-500 rounded-full px-2 py-1"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Action Buttons */}
+                <div className="flex gap-4">
+                  <a
+                    href={selectedProject.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-gray-800 hover:bg-purple-800 text-gray-300 px-4 py-2 rounded-lg text-center text-sm font-semibold"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
