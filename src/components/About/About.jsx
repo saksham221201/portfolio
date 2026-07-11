@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactTypingEffect from 'react-typing-effect';
-import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/profile.jpg';
+import React from "react";
+import ReactTypingEffect from "react-typing-effect";
+import Tilt from "react-parallax-tilt";
+import profileImage from "../../assets/profile.jpg";
 
 const About = () => {
   return (
@@ -24,11 +24,7 @@ const About = () => {
           <h3 className="text-xl sm:text-1xl md:text-2xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-white">I am a </span>
             <ReactTypingEffect
-              text={[
-                'Backend Developer',
-                'Coder',
-                'GenAI Enthusiast',
-              ]}
+              text={["Backend Developer", "Coder", "GenAI Enthusiast"]}
               speed={100}
               eraseSpeed={50}
               typingDelay={500}
@@ -40,22 +36,29 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 mr-3 leading-relaxed">
-          I am a proficient and ambitious Backend Developer with nearly 3 years of hands-on experience specializing in Java Spring Boot and Microservices architecture. Demonstrates a solid foundation in data structures, object-oriented principles (including SOLID), and design patterns, along with a strong grasp of database management systems. Adept at building scalable, efficient, and maintainable backend systems, with proven expertise in Java, Kafka, RESTful APIs, and MongoDB. Passionate about working on technically challenging projects and driving solutions that deliver business value.
+            I am a proficient and ambitious Backend Developer with nearly 3
+            years of hands-on experience specializing in Java Spring Boot and
+            Microservices architecture. Demonstrates a solid foundation in data
+            structures, object-oriented principles (including SOLID), and design
+            patterns, along with a strong grasp of database management systems.
+            Adept at building scalable, efficient, and maintainable backend
+            systems, with proven expertise in Java, Kafka, RESTful APIs, and
+            MongoDB. Passionate about working on technically challenging
+            projects and driving solutions that deliver business value.
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1PT5w_N5IdTLUqrUnhKoALi2peXdeb8vx/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1kLPkZeezVxD0me29RVDmT73P8EeNAWgJ/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
-              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
+              background: "linear-gradient(90deg, #8245ec, #a855f7)",
+              boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
             }}
           >
             DOWNLOAD CV
           </a>
-          
         </div>
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
@@ -81,4 +84,3 @@ const About = () => {
 };
 
 export default About;
-
