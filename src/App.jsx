@@ -9,10 +9,12 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from "./components/BlurBlob";
 import ParticlesBackground from "./components/ParticlesBackground/ParticlesBackground";
+import Cursor from "./components/Cursor/Cursor";
 
 const App = () => {
   return (
     <div className="bg-[#050414] overflow-hidden">
+      <Cursor />
       <ParticlesBackground />
 
       <BlurBlob

@@ -20,7 +20,7 @@ import intelliJ from "./assets/tech_logo/intelliJ.png";
 import nagarroLogo from "./assets/company_logo/nagarro.png";
 
 // Education Section Logo's
-import psitLogo from "./assets/education_logo/psit.png";
+import psitLogo from "./assets/education_logo/psit.jpg";
 import schoolLogo from "./assets/education_logo/school.jpg";
 
 // Project Section Logo's
