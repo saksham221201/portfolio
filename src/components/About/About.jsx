@@ -48,7 +48,7 @@ const About = () => {
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1kLPkZeezVxD0me29RVDmT73P8EeNAWgJ/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1kLPkZeezVxD0me29RVDmT73P8EeNAWgJ/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -73,7 +73,7 @@ const About = () => {
           >
             <img
               src={profileImage}
-              alt="Tarun Kaushik"
+              alt="Saksham Joshi"
               className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
             />
           </Tilt>
